@@ -9,6 +9,8 @@ import 'package:flutter/material.dart';
 
 import '../../const/color.dart';
 import '../../responsive/responsive.dart';
+import '../../theme/cubit/theme_cubit.dart';
+import '../../view_model/drawer_provider/drawer_provider.dart';
 
 
 class MainPage extends StatelessWidget {
@@ -16,7 +18,6 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    App.init(context);
     final drawerProvider = Provider.of<DrawerProvider>(context);
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
@@ -26,7 +27,7 @@ class MainPage extends StatelessWidget {
       appBar:  PreferredSize(
         preferredSize: Size.fromHeight(120),
         child: Responsive(
-          desktop: _NavbarDesktop(),
+          desktop: ,
           mobile: _NavBarTablet(),
           tablet: _NavBarTablet(),
         ),
@@ -92,8 +93,8 @@ class MainPage extends StatelessWidget {
                     alignment: Alignment.topCenter,
                   ),
                 ),
-              _Body(),
-              const ArrowOnTop()
+              // _Body(),
+              // const ArrowOnTop()
             ],
           );
         },
