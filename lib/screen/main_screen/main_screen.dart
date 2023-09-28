@@ -22,7 +22,7 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       key: drawerProvider.key,
       extendBodyBehindAppBar: true,
-      appBar: const PreferredSize(
+      appBar:  PreferredSize(
         preferredSize: Size.fromHeight(120),
         child: Responsive(
           desktop: _NavbarDesktop(),
