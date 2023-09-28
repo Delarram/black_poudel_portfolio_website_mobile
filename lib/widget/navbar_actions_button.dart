@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../const/color.dart';
 import '../view_model/drawer_provider/scroll_provider.dart';
+import 'animation/entrance_fader.dart';
 
 class NavBarActionButton extends StatefulWidget {
   final String label;
