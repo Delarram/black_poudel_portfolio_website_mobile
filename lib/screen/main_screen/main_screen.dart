@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 import '../../const/color.dart';
+import '../../responsive/responsive.dart';
 
 
 class MainPage extends StatelessWidget {
